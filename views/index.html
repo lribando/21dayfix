@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>21 Day Fix</title>
+<link rel="stylesheet" type="text/css" href="/public/css/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="/public/javascript/21.js"></script>
+
+</head>
+<body>
+	<header>
+		<span>Calorie Target for Today's Date</span>
+	</header>
+	<main>
+	<section>
+		<table id="tblTasks">
+			<colgroup>
+				<col width="12%">
+				<col width="12%">
+				<col width="12%">
+				<col width="12%">
+				<col width="12%">
+				<col width="12%">
+				<col width="12%">
+				<col width="12%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th class="date">Date</th>
+					<th class="green">Veggies</th>
+					<th class="purple">Fruit</th>
+					<th class="red">Proteins</th>
+					<th class="yellow">Carbs</th>
+					<th class="blue">Healthy Fats</th>
+					<th class="orange">Seeds &amp; Dressings</th>
+					<th class="gray">Drinks</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+					<td class="meal">Meal 1</td>
+					<td class="veggie"><input type="text" name="veggie[]" value="0" id="veggie-input" onclick="select()" /></td>
+					<td class="fruit"><input type="text" name="fruit[]" value="0" onclick="select()" /></td>
+					<td class="protein"><input type="text" name="protein[]" value="0" onclick="select()" /></td>
+					<td class="carbs"><input type="text" name="carbs[]" value="0" onclick="select()" /></td>
+					<td class="fats"><input type="text" name="fats[]" value="0" onclick="select()" /></td>
+					<td class="seeds"><input type="text" name="seeds[]" value="0" onclick="select()" /></td>
+					<td class="drinks"><input type="text" name="drinks[]" value="0" onclick="select()" /></td>
+			</tr>
+			<tr>
+					<td class="meal">Meal 2</td>
+					<td class="veggie"><input type="text" name="veggie[]" value="0" id="veggie-input" onclick="select()" /></td>
+					<td class="fruit"><input type="text" name="fruit[]" value="0" onclick="select()" /></td>
+					<td class="protein"><input type="text" name="protein[]" value="0" onclick="select()" /></td>
+					<td class="carbs"><input type="text" name="carbs[]" value="0" onclick="select()" /></td>
+					<td class="fats"><input type="text" name="fats[]" value="0" onclick="select()" /></td>
+					<td class="seeds"><input type="text" name="seeds[]" value="0" onclick="select()" /></td>
+					<td class="drinks"><input type="text" name="drinks[]" value="0" onclick="select()" /></td>
+			</tr>
+			<tr>
+					<td class="meal">Meal 3</td>
+					<td class="veggie"><input type="text" name="veggie[]" value="0" id="veggie-input" onclick="select()" /></td>
+					<td class="fruit"><input type="text" name="fruit[]" value="0" onclick="select()" /></td>
+					<td class="protein"><input type="text" name="protein[]" value="0" onclick="select()" /></td>
+					<td class="carbs"><input type="text" name="carbs[]" value="0" onclick="select()" /></td>
+					<td class="fats"><input type="text" name="fats[]" value="0" onclick="select()" /></td>
+					<td class="seeds"><input type="text" name="seeds[]" value="0" onclick="select()"/></td>
+					<td class="drinks"><input type="text" name="drinks[]" value="0" onclick="select()" /></td>
+			</tr>
+			<tr>
+					<td class="meal">Meal 4</td>
+					<td class="veggie"><input type="text" name="veggie[]" value="0" id="veggie-input" onclick="select()" /></td>
+					<td class="fruit"><input type="text" name="fruit[]" value="0" onclick="select()" /></td>
+					<td class="protein"><input type="text" name="protein[]" value="0" onclick="select()" /></td>
+					<td class="carbs"><input type="text" name="carbs[]" value="0" onclick="select()" /></td>
+					<td class="fats"><input type="text" name="fats[]" value="0" onclick="select()" /></td>
+					<td class="seeds"><input type="text" name="seeds[]" value="0" onclick="select()" /></td>
+					<td class="drinks"><input type="text" name="drinks[]" value="0" onclick="select()" /></td>
+			</tr>
+			<tr>
+					<td class="meal">Meal 5</td>
+					<td class="veggie"><input type="text" name="veggie[]" value="0" id="veggie-input" onclick="select()" /></td>
+					<td class="fruit"><input type="text" name="fruit[]" value="0" onclick="select()" /></td>
+					<td class="protein"><input type="text" name="protein[]" value="0" onclick="select()" /></td>
+					<td class="carbs"><input type="text" name="carbs[]" value="0" onclick="select()" /></td>
+					<td class="fats"><input type="text" name="fats[]" value="0" onclick="select()"/></td>
+					<td class="seeds"><input type="text" name="seeds[]" value="0" onclick="select()" /></td>
+					<td class="drinks"><input type="text" name="drinks[]" value="0" onclick="select()" /></td>
+			</tr>
+			<tr>
+      		<td class="meal">Meal 6</td>
+					<td class="veggie"><input type="text" name="veggie[]" value="0" id="veggie-input" onclick="select()" /></td>
+					<td class="fruit"><input type="text" name="fruit[]" value="0" onclick="select()" /></td>
+					<td class="protein"><input type="text" name="protein[]" value="0" onclick="select()" /></td>
+					<td class="carbs"><input type="text" name="carbs[]" value="0" onclick="select()" /></td>
+					<td class="fats"><input type="text" name="fats[]" value="0" onclick="select()" /></td>
+					<td class="seeds"><input type="text" name="seeds[]" value="0" onclick="select()" /></td>
+					<td class="drinks"><input type="text" name="drinks[]" value="0" onclick="select()" /></td>
+			</tr>
+			<tr>
+      		<td class="date">TOTAL</td>
+					<td id="veggie"></td>
+					<td id="fruit"></td>
+					<td id="protein"></td>
+					<td id="carbs"></td>
+					<td id="fats"></td>
+					<td id="seeds"></td>
+					<td id="drinks"></td>
+			</tr>
+      <tr>
+      		<td class="water">Water</td>
+					<td class="water"><input type="text" name="task" value="0" /></td>
+					<td class="water"><input type="text" name="task" value="0" /></td>
+					<td class="water"><input type="text" name="task" value="0" /></td>
+					<td class="water"><input type="text" name="task" value="0" /></td>
+					<td class="water"><input type="text" name="task" value="0" /></td>
+					<td class="water"><input type="text" name="task" value="0" /></td>
+					<td class="water"><input type="text" name="task" value="0" /></td>
+			</tr>
+      <tr>
+      		<td class="date">Remaining</td>
+					<td class="veggie"><input type="text" name="task" value="0" /></td>
+					<td class="fruit"><input type="text" name="task" value="0" /></td>
+					<td class="protein"><input type="text" name="task" value="0" /></td>
+					<td class="carbs"><input type="text" name="task" value="0" /></td>
+					<td class="fats"><input type="text" name="task" value="0" /></td>
+					<td class="seeds"><input type="text" name="task" value="0" /></td>
+					<td class="drinks"><input type="text" name="task" value="0" /></td>
+			</tr>
+      </tbody>
+		</table>
+	</section>
+	</main>
+</body>
+</html>
+
